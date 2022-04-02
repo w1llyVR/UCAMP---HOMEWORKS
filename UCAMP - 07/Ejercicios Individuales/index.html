@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" id="nombre" class="form-control" placeholder="nombre">
+                <input type="text" id="tipo" class="form-control" placeholder="tipo">
+                <input type="number" id="cantidad" class="form-control" placeholder="cantidad">
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-info" type="button" onclick="agregarItem()">Agregar</button>
+            </div>
+            <div class="col-md-4">
+                <input type="text" id="busqueda" class="form-control" placeholder="Tipo" aria-label="Tipo" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" onclick="Listar()">Listar</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="canasta">
+                <div class="lista" id="lista">
+                    <ul class="elementos-lista" id="elemento-lista">
+                        <li>Hola mundo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
