@@ -1,0 +1,23 @@
+{
+    "name": "ucamp-willy",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "http-server -a localhost -p 1441"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/w1llyVR/UCAMP-WILLY.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/w1llyVR/UCAMP-WILLY/issues"
+    },
+    "homepage": "https://github.com/w1llyVR/UCAMP-WILLY#readme",
+    "description": "",
+    "dependencies": {
+        "bulma": "^0.9.4"
+    }
+}
