@@ -28,7 +28,6 @@ const saludar2 = new Promise((resolve, reject) => {
 
 
 
-console.log('dfdf', 'dfdfd', 12, "")
 
 console.log(saludar2);
 saludar2.then((response) => {
