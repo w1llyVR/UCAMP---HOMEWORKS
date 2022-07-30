@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Component from './components/Component';
 import Hello from './components/Hello';
+import FormPatients from './components/FormPatients/FormPatients';
+import React, { useState } from 'react';
 
 const arr = [{
         name: "Willy",
@@ -17,7 +19,11 @@ const arr = [{
     }
 ]
 
+
+
 function App() {
+    const [arreglo, setArreglo] = useState(arr)
+
     return ( <
         div className = "App" >
         <
@@ -27,7 +33,7 @@ function App() {
 
         <
         h1 > USO DE MAP CON REACT < /h1> {
-            arr.map((persona, i) => {
+            arreglo.map((persona, i) => {
                 return ( <
                     div key = { i } >
                     <
@@ -36,7 +42,12 @@ function App() {
                     /div>
                 )
             })
-        } <
+        }
+
+        <
+        FormPatients arreglo = { arreglo }
+        setValue = { setArreglo }
+        /> <
         /div>
     );
 }
